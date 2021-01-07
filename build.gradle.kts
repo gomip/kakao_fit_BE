@@ -52,6 +52,8 @@ dependencies {
     implementation("commons-io:commons-io:2.8.0")
     implementation("org.apache.commons:commons-lang3:3.9")
 
+    // other ---------------------------------------------------------------------------------------
+    implementation("com.google.guava:guava:23.0")
     // test ----------------------------------------------------------------------------------------
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("junit:junit:4.12")

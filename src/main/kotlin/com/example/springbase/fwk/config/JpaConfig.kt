@@ -22,8 +22,8 @@ import javax.sql.DataSource
 @Configuration
 @EnableJpaRepositories(
     basePackages = ["com.example.springbase.repo.jpa"],
-    entityManagerFactoryRef = "entityMangerFactory",
-    transactionManagerRef = "transactionManger"
+    entityManagerFactoryRef = "entityManagerFactory",
+    transactionManagerRef = "transactionManager"
 )
 class JpaConfig(
     @Value("\${spring.jpa.hibernate.ddl-auto}") val ddlAuto: String,
@@ -35,12 +35,13 @@ class JpaConfig(
 
     @Primary
     @Bean(name = ["entityManagerFactory"])
-    fun entityMangerFactory(@Qualifier("dataSource")ds : DataSource) : EntityManagerFactory {
+    fun entityManagerFactory(@Qualifier("dataSource")ds : DataSource) : EntityManagerFactory {
         log.info("===== EntityManagerFactory Start =====")
         val vendorAdapter = HibernateJpaVendorAdapter()
         vendorAdapter.setDatabase(Database.POSTGRESQL)
 
         val properties = hashMapOf<String, Any>()
+        properties["hibernate.default_schema"] = "ringfit"
         properties["hibernate.physical_naming_strategy"] = "org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy"
         properties["hibernate.format_sql"] = formatSql
         properties["hibernate.ddl-auto"] = ddlAuto
