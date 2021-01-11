@@ -1,35 +1,47 @@
-[15:15:00.687:INFO :SpringBaseApplication$Companion:55] Starting SpringBaseApplication.Companion using Java 1.8.0_222 on junghoon.local with PID 33867 (/Users/kimjunghoon/tmp/personal/kakao-fit/build/classes/kotlin/main started by kimjunghoon in /Users/kimjunghoon/tmp/personal/kakao-fit)
-[15:15:00.689:DEBUG:SpringBaseApplication$Companion:56] Running with Spring Boot v2.4.1, Spring v5.3.2
-[15:15:00.690:INFO :SpringBaseApplication$Companion:664] The following profiles are active: local
-[15:15:02.390:INFO :EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
-[15:15:02.416:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-[15:15:02.418:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:15:02.418:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:15:02.419:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
-[15:15:02.420:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-[15:15:02.420:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-[15:15:02.420:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-[15:15:02.471:INFO :DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-[15:15:03.138:INFO :TomcatWebServer:108] Tomcat initialized with port(s): 5001 (http)
-[15:15:03.148:INFO :Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-5001"]
-[15:15:03.149:INFO :StandardService:173] Starting service [Tomcat]
-[15:15:03.149:INFO :StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-[15:15:03.236:INFO :[/]:173] Initializing Spring embedded WebApplicationContext
-[15:15:03.236:INFO :ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 2478 ms
-[15:15:03.331:INFO :DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-[15:15:03.334:INFO :DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-[15:15:03.367:INFO :JasyptConfig:26] =============     Jasypt Config Start =============
-[15:15:03.375:INFO :JasyptConfig:38] =============       Jasypt Config End =============
-[15:15:03.379:INFO :DefaultLazyEncryptor:32] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@254449bb with name: encryptorBean
-[15:15:03.450:INFO :DataSourceConfig:30] DataSource Config Start
-[15:15:03.455:INFO :DataSourceConfig:36] DataSource Config End
-[15:15:03.493:INFO :MybatisConfig:40] ===== MybatisConfig Start =====
-[15:15:03.496:INFO :MybatisConfig:47] =====   MybatisConfig End =====
-[15:15:03.693:INFO :MybatisConfig:53] ===== sqlSessionTemplate Start =====
-[15:15:03.697:INFO :MybatisConfig:55] =====   sqlSessionTemplate End =====
-[15:15:03.791:WARN :AnnotationConfigServletWebServerApplicationContext:596] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'comUserMstRepo' defined in com.example.springbase.repo.jpa.com.ComUserMstRepo defined in @EnableJpaRepositories declared on JpaConfig: Cannot create inner bean '(inner bean)#f1266c6' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#f1266c6': Cannot resolve reference to bean 'entityMangerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityMangerFactory' available
-[15:15:03.794:INFO :StandardService:173] Stopping service [Tomcat]
-[15:15:03.825:ERROR:LoggingFailureAnalysisReporter:40] 
+[14:50:12.305:INFO :SpringBaseApplication$Companion:55] Starting SpringBaseApplication.Companion using Java 1.8.0_222 on junghoon.local with PID 35292 (/Users/kimjunghoon/tmp/personal/kakao-fit/build/classes/kotlin/main started by kimjunghoon in /Users/kimjunghoon/tmp/personal/kakao-fit)
+[14:50:12.306:DEBUG:SpringBaseApplication$Companion:56] Running with Spring Boot v2.4.1, Spring v5.3.2
+[14:50:12.307:INFO :SpringBaseApplication$Companion:664] The following profiles are active: local
+[14:50:13.300:INFO :EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+[14:50:13.314:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+[14:50:13.315:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+[14:50:13.315:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+[14:50:13.315:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+[14:50:13.316:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+[14:50:13.316:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+[14:50:13.316:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+[14:50:13.354:INFO :DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+[14:50:13.810:INFO :TomcatWebServer:108] Tomcat initialized with port(s): 5001 (http)
+[14:50:13.816:INFO :Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-5001"]
+[14:50:13.817:INFO :StandardService:173] Starting service [Tomcat]
+[14:50:13.817:INFO :StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+[14:50:13.881:INFO :[/]:173] Initializing Spring embedded WebApplicationContext
+[14:50:13.882:INFO :ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1542 ms
+[14:50:13.943:INFO :DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+[14:50:13.945:INFO :DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+[14:50:13.971:INFO :JasyptConfig:26] =============     Jasypt Config Start =============
+[14:50:13.977:INFO :JasyptConfig:38] =============       Jasypt Config End =============
+[14:50:13.979:INFO :DefaultLazyEncryptor:32] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@5f5effb0 with name: encryptorBean
+[14:50:14.015:INFO :DataSourceConfig:30] DataSource Config Start
+[14:50:14.018:INFO :DataSourceConfig:36] DataSource Config End
+[14:50:14.052:INFO :MybatisConfig:40] ===== MybatisConfig Start =====
+[14:50:14.055:INFO :MybatisConfig:47] =====   MybatisConfig End =====
+[14:50:14.187:INFO :MybatisConfig:53] ===== sqlSessionTemplate Start =====
+[14:50:14.190:INFO :MybatisConfig:55] =====   sqlSessionTemplate End =====
+[14:50:14.266:INFO :JpaConfig:39] ===== EntityManagerFactory Start =====
+[14:50:14.305:DEBUG:logging:152] Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+[14:50:15.294:INFO :LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[14:50:15.298:INFO :JpaConfig:59] =====   EntityManagerFactory End =====
+[14:50:16.123:INFO :JpaConfig:65] ===== TransactionManger Start =====
+[14:50:16.124:INFO :JpaConfig:67] =====   TransactionManger End =====
+[14:50:16.240:INFO :ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+[14:50:16.482:INFO :Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-5001"]
+[14:50:16.506:WARN :AnnotationConfigServletWebServerApplicationContext:596] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 5001 is already in use
+[14:50:16.507:INFO :ThreadPoolTaskExecutor:218] Shutting down ExecutorService 'applicationTaskExecutor'
+[14:50:16.513:INFO :Http11NioProtocol:173] Pausing ProtocolHandler ["http-nio-5001"]
+[14:50:16.513:INFO :StandardService:173] Stopping service [Tomcat]
+[14:50:16.516:INFO :Http11NioProtocol:173] Stopping ProtocolHandler ["http-nio-5001"]
+[14:50:16.516:INFO :Http11NioProtocol:173] Destroying ProtocolHandler ["http-nio-5001"]
+[14:50:16.545:ERROR:LoggingFailureAnalysisReporter:40] 
 
 ***************************
 APPLICATION FAILED TO START
@@ -37,939 +49,102 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field repo in com.example.springbase.part.service.com.UserService required a bean named 'entityMangerFactory' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
+Web server failed to start. Port 5001 was already in use.
 
 Action:
 
-Consider defining a bean named 'entityMangerFactory' in your configuration.
+Identify and stop the process that's listening on port 5001 or configure this application to listen on another port.
 
-[15:26:11.270:INFO :SpringBaseApplication$Companion:55] Starting SpringBaseApplication.Companion using Java 1.8.0_222 on junghoon.local with PID 34677 (/Users/kimjunghoon/tmp/personal/kakao-fit/build/classes/kotlin/main started by kimjunghoon in /Users/kimjunghoon/tmp/personal/kakao-fit)
-[15:26:11.272:DEBUG:SpringBaseApplication$Companion:56] Running with Spring Boot v2.4.1, Spring v5.3.2
-[15:26:11.273:INFO :SpringBaseApplication$Companion:664] The following profiles are active: local
-[15:26:13.401:INFO :EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
-[15:26:13.436:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-[15:26:13.438:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:26:13.439:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:26:13.439:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
-[15:26:13.440:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-[15:26:13.440:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-[15:26:13.440:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-[15:26:13.501:INFO :DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-[15:26:14.162:INFO :TomcatWebServer:108] Tomcat initialized with port(s): 5001 (http)
-[15:26:14.170:INFO :Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-5001"]
-[15:26:14.171:INFO :StandardService:173] Starting service [Tomcat]
-[15:26:14.171:INFO :StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-[15:26:14.233:INFO :[/]:173] Initializing Spring embedded WebApplicationContext
-[15:26:14.233:INFO :ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 2856 ms
-[15:26:14.305:INFO :DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-[15:26:14.307:INFO :DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-[15:26:14.332:INFO :JasyptConfig:26] =============     Jasypt Config Start =============
-[15:26:14.339:INFO :JasyptConfig:38] =============       Jasypt Config End =============
-[15:26:14.342:INFO :DefaultLazyEncryptor:32] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@4e642ee1 with name: encryptorBean
-[15:26:14.385:INFO :DataSourceConfig:30] DataSource Config Start
-[15:26:14.390:INFO :DataSourceConfig:36] DataSource Config End
-[15:26:14.419:INFO :MybatisConfig:40] ===== MybatisConfig Start =====
-[15:26:14.422:INFO :MybatisConfig:47] =====   MybatisConfig End =====
-[15:26:14.572:INFO :MybatisConfig:53] ===== sqlSessionTemplate Start =====
-[15:26:14.577:INFO :MybatisConfig:55] =====   sqlSessionTemplate End =====
-[15:26:14.660:WARN :AnnotationConfigServletWebServerApplicationContext:596] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'comUserMstRepo' defined in com.example.springbase.repo.jpa.com.ComUserMstRepo defined in @EnableJpaRepositories declared on JpaConfig: Cannot create inner bean '(inner bean)#3913f206' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#3913f206': Cannot resolve reference to bean 'entityMangerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityMangerFactory' available
-[15:26:14.662:INFO :StandardService:173] Stopping service [Tomcat]
-[15:26:14.687:ERROR:LoggingFailureAnalysisReporter:40] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field repo in com.example.springbase.part.service.com.UserService required a bean named 'entityMangerFactory' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean named 'entityMangerFactory' in your configuration.
-
-[15:27:42.403:INFO :SpringBaseApplication$Companion:55] Starting SpringBaseApplication.Companion using Java 1.8.0_222 on junghoon.local with PID 34799 (/Users/kimjunghoon/tmp/personal/kakao-fit/build/classes/kotlin/main started by kimjunghoon in /Users/kimjunghoon/tmp/personal/kakao-fit)
-[15:27:42.404:DEBUG:SpringBaseApplication$Companion:56] Running with Spring Boot v2.4.1, Spring v5.3.2
-[15:27:42.405:INFO :SpringBaseApplication$Companion:664] The following profiles are active: local
-[15:27:43.351:INFO :EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
-[15:27:43.369:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-[15:27:43.370:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:27:43.370:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:27:43.371:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
-[15:27:43.371:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-[15:27:43.372:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-[15:27:43.372:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-[15:27:43.408:INFO :DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-[15:27:43.841:INFO :TomcatWebServer:108] Tomcat initialized with port(s): 5001 (http)
-[15:27:43.847:INFO :Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-5001"]
-[15:27:43.848:INFO :StandardService:173] Starting service [Tomcat]
-[15:27:43.848:INFO :StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-[15:27:43.905:INFO :[/]:173] Initializing Spring embedded WebApplicationContext
-[15:27:43.906:INFO :ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1469 ms
-[15:27:43.971:INFO :DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-[15:27:43.973:INFO :DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-[15:27:43.997:INFO :JasyptConfig:26] =============     Jasypt Config Start =============
-[15:27:44.003:INFO :JasyptConfig:38] =============       Jasypt Config End =============
-[15:27:44.005:INFO :DefaultLazyEncryptor:32] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@3e0fbeb5 with name: encryptorBean
-[15:27:44.038:INFO :DataSourceConfig:30] DataSource Config Start
-[15:27:44.041:INFO :DataSourceConfig:36] DataSource Config End
-[15:27:44.070:INFO :MybatisConfig:40] ===== MybatisConfig Start =====
-[15:27:44.072:INFO :MybatisConfig:47] =====   MybatisConfig End =====
-[15:27:44.202:INFO :MybatisConfig:53] ===== sqlSessionTemplate Start =====
-[15:27:44.205:INFO :MybatisConfig:55] =====   sqlSessionTemplate End =====
-[15:27:44.274:WARN :AnnotationConfigServletWebServerApplicationContext:596] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'comUserMstRepo' defined in com.example.springbase.repo.jpa.com.ComUserMstRepo defined in @EnableJpaRepositories declared on JpaConfig: Cannot create inner bean '(inner bean)#64f9f455' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#64f9f455': Cannot resolve reference to bean 'entityMangerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityMangerFactory' available
-[15:27:44.276:INFO :StandardService:173] Stopping service [Tomcat]
-[15:27:44.298:ERROR:LoggingFailureAnalysisReporter:40] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field repo in com.example.springbase.part.service.com.UserService required a bean named 'entityMangerFactory' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean named 'entityMangerFactory' in your configuration.
-
-[15:28:08.784:INFO :SpringBaseApplication$Companion:55] Starting SpringBaseApplication.Companion using Java 1.8.0_222 on junghoon.local with PID 34841 (/Users/kimjunghoon/tmp/personal/kakao-fit/build/classes/kotlin/main started by kimjunghoon in /Users/kimjunghoon/tmp/personal/kakao-fit)
-[15:28:08.786:DEBUG:SpringBaseApplication$Companion:56] Running with Spring Boot v2.4.1, Spring v5.3.2
-[15:28:08.786:INFO :SpringBaseApplication$Companion:664] The following profiles are active: local
-[15:28:11.027:INFO :EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
-[15:28:11.048:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-[15:28:11.049:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:28:11.049:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:28:11.050:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
-[15:28:11.050:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-[15:28:11.050:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-[15:28:11.050:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-[15:28:11.091:INFO :DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-[15:28:11.777:INFO :TomcatWebServer:108] Tomcat initialized with port(s): 5001 (http)
-[15:28:11.788:INFO :Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-5001"]
-[15:28:11.789:INFO :StandardService:173] Starting service [Tomcat]
-[15:28:11.789:INFO :StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-[15:28:11.878:INFO :[/]:173] Initializing Spring embedded WebApplicationContext
-[15:28:11.880:INFO :ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 3037 ms
-[15:28:11.999:INFO :DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-[15:28:12.033:INFO :DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-[15:28:12.110:INFO :JasyptConfig:26] =============     Jasypt Config Start =============
-[15:28:12.125:INFO :JasyptConfig:38] =============       Jasypt Config End =============
-[15:28:12.131:INFO :DefaultLazyEncryptor:32] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@29ebbdf4 with name: encryptorBean
-[15:28:12.184:INFO :DataSourceConfig:30] DataSource Config Start
-[15:28:12.188:INFO :DataSourceConfig:36] DataSource Config End
-[15:28:12.232:INFO :MybatisConfig:40] ===== MybatisConfig Start =====
-[15:28:12.235:INFO :MybatisConfig:47] =====   MybatisConfig End =====
-[15:28:12.410:INFO :MybatisConfig:53] ===== sqlSessionTemplate Start =====
-[15:28:12.414:INFO :MybatisConfig:55] =====   sqlSessionTemplate End =====
-[15:28:12.511:WARN :AnnotationConfigServletWebServerApplicationContext:596] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'comUserMstRepo' defined in com.example.springbase.repo.jpa.com.ComUserMstRepo defined in @EnableJpaRepositories declared on JpaConfig: Cannot create inner bean '(inner bean)#3e8799f' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#3e8799f': Cannot resolve reference to bean 'entityMangerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityMangerFactory' available
-[15:28:12.514:INFO :StandardService:173] Stopping service [Tomcat]
-[15:28:12.539:ERROR:LoggingFailureAnalysisReporter:40] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field repo in com.example.springbase.part.service.com.UserService required a bean named 'entityMangerFactory' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean named 'entityMangerFactory' in your configuration.
-
-[15:29:08.565:INFO :SpringBaseApplication$Companion:55] Starting SpringBaseApplication.Companion using Java 1.8.0_222 on junghoon.local with PID 34922 (/Users/kimjunghoon/tmp/personal/kakao-fit/build/classes/kotlin/main started by kimjunghoon in /Users/kimjunghoon/tmp/personal/kakao-fit)
-[15:29:08.566:DEBUG:SpringBaseApplication$Companion:56] Running with Spring Boot v2.4.1, Spring v5.3.2
-[15:29:08.566:INFO :SpringBaseApplication$Companion:664] The following profiles are active: local
-[15:29:09.497:INFO :EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
-[15:29:09.510:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-[15:29:09.511:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:29:09.511:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:29:09.512:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
-[15:29:09.512:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-[15:29:09.512:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-[15:29:09.512:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-[15:29:09.538:INFO :DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-[15:29:09.983:INFO :TomcatWebServer:108] Tomcat initialized with port(s): 5001 (http)
-[15:29:09.990:INFO :Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-5001"]
-[15:29:09.991:INFO :StandardService:173] Starting service [Tomcat]
-[15:29:09.991:INFO :StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-[15:29:10.049:INFO :[/]:173] Initializing Spring embedded WebApplicationContext
-[15:29:10.049:INFO :ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1443 ms
-[15:29:10.114:INFO :DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-[15:29:10.116:INFO :DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-[15:29:10.139:INFO :JasyptConfig:26] =============     Jasypt Config Start =============
-[15:29:10.145:INFO :JasyptConfig:38] =============       Jasypt Config End =============
-[15:29:10.148:INFO :DefaultLazyEncryptor:32] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@3e0fbeb5 with name: encryptorBean
-[15:29:10.183:INFO :DataSourceConfig:30] DataSource Config Start
-[15:29:10.186:INFO :DataSourceConfig:36] DataSource Config End
-[15:29:10.213:INFO :MybatisConfig:40] ===== MybatisConfig Start =====
-[15:29:10.215:INFO :MybatisConfig:47] =====   MybatisConfig End =====
-[15:29:10.343:INFO :MybatisConfig:53] ===== sqlSessionTemplate Start =====
-[15:29:10.346:INFO :MybatisConfig:55] =====   sqlSessionTemplate End =====
-[15:29:10.413:WARN :AnnotationConfigServletWebServerApplicationContext:596] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'repo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'comUserMstRepo' defined in com.example.springbase.repo.jpa.com.ComUserMstRepo defined in @EnableJpaRepositories declared on JpaConfig: Cannot create inner bean '(inner bean)#64f9f455' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#64f9f455': Cannot resolve reference to bean 'entityMangerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityMangerFactory' available
-[15:29:10.415:INFO :StandardService:173] Stopping service [Tomcat]
-[15:29:10.437:ERROR:LoggingFailureAnalysisReporter:40] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field repo in com.example.springbase.part.service.com.UserService required a bean named 'entityMangerFactory' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean named 'entityMangerFactory' in your configuration.
-
-[15:29:55.277:INFO :SpringBaseApplication$Companion:55] Starting SpringBaseApplication.Companion using Java 1.8.0_222 on junghoon.local with PID 34990 (/Users/kimjunghoon/tmp/personal/kakao-fit/build/classes/kotlin/main started by kimjunghoon in /Users/kimjunghoon/tmp/personal/kakao-fit)
-[15:29:55.278:DEBUG:SpringBaseApplication$Companion:56] Running with Spring Boot v2.4.1, Spring v5.3.2
-[15:29:55.278:INFO :SpringBaseApplication$Companion:664] The following profiles are active: local
-[15:29:56.276:INFO :EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
-[15:29:56.290:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-[15:29:56.291:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:29:56.291:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:29:56.291:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
-[15:29:56.292:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-[15:29:56.292:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-[15:29:56.292:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-[15:29:56.324:INFO :DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-[15:29:56.770:INFO :TomcatWebServer:108] Tomcat initialized with port(s): 5001 (http)
-[15:29:56.777:INFO :Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-5001"]
-[15:29:56.777:INFO :StandardService:173] Starting service [Tomcat]
-[15:29:56.778:INFO :StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-[15:29:56.839:INFO :[/]:173] Initializing Spring embedded WebApplicationContext
-[15:29:56.839:INFO :ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1530 ms
-[15:29:56.903:INFO :DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-[15:29:56.905:INFO :DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-[15:29:56.930:INFO :JasyptConfig:26] =============     Jasypt Config Start =============
-[15:29:56.936:INFO :JasyptConfig:38] =============       Jasypt Config End =============
-[15:29:56.938:INFO :DefaultLazyEncryptor:32] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@3e0fbeb5 with name: encryptorBean
-[15:29:56.975:INFO :DataSourceConfig:30] DataSource Config Start
-[15:29:56.978:INFO :DataSourceConfig:36] DataSource Config End
-[15:29:57.007:INFO :MybatisConfig:40] ===== MybatisConfig Start =====
-[15:29:57.009:INFO :MybatisConfig:47] =====   MybatisConfig End =====
-[15:29:57.140:INFO :MybatisConfig:53] ===== sqlSessionTemplate Start =====
-[15:29:57.143:INFO :MybatisConfig:55] =====   sqlSessionTemplate End =====
-[15:29:57.217:INFO :JpaConfig:39] ===== EntityManagerFactory Start =====
-[15:29:57.272:DEBUG:logging:152] Logging Provider: org.jboss.logging.Log4j2LoggerProvider
-[15:29:58.464:INFO :LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-[15:29:58.468:INFO :JpaConfig:58] =====   EntityManagerFactory End =====
-[15:29:59.345:INFO :JpaConfig:64] ===== TransactionManger Start =====
-[15:29:59.345:INFO :JpaConfig:66] =====   TransactionManger End =====
-[15:29:59.472:INFO :ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-[15:29:59.758:INFO :Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-5001"]
-[15:29:59.793:INFO :TomcatWebServer:220] Tomcat started on port(s): 5001 (http) with context path ''
-[15:30:00.020:INFO :SpringBaseApplication$Companion:61] Started SpringBaseApplication.Companion in 5.103 seconds (JVM running for 5.558)
-[15:30:00.026:INFO :SpringBaseApplication:34] =============     Check Profile START =============
-[15:30:00.026:INFO :SpringBaseApplication:36] local
-[15:30:00.026:INFO :SpringBaseApplication:37] =============       Check Profile End ============= : activate profile count: 1
-[15:30:00.026:INFO :SpringBaseApplication:40] ============= Check Loaded Bean START =============
-[15:30:00.027:INFO :SpringBaseApplication:41] Loaded Bean : 375
-[15:30:00.027:INFO :SpringBaseApplication:42] =============   Check Loaded Bean END =============
-[15:30:00.027:INFO :SpringBaseApplication:44] =============             AppMain End ============= : 5199 ms
-[15:30:11.816:INFO :[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-[15:30:11.817:INFO :DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-[15:30:11.818:INFO :DispatcherServlet:547] Completed initialization in 1 ms
-[15:30:17.084:INFO :ControllerAdvice:40]   session ID : 879DF84022A4688536B602C6BE4C3213
-[15:30:17.084:INFO :ControllerAdvice:41]    client IP : null
-[15:30:17.085:INFO :ControllerAdvice:42]          GID : 2b72341a-496d-4502-a144-9031c54ba77e
-[15:30:17.085:INFO :ControllerAdvice:43]       method : Current HttpServletRequest.method
-[15:30:17.085:INFO :ControllerAdvice:44]  request URL : GET
-[15:30:17.085:INFO :ControllerAdvice:45] query string : null
-[15:30:17.091:INFO :ControllerAdvice:51]         body : null
-[15:30:17.091:INFO :ControllerAdvice:52]      referer : http://localhost:5001/swagger-ui/
-[15:30:17.091:INFO :ControllerAdvice:53] >>>>> controller start [UserController.getUser()]
-[15:30:17.095:INFO :ServiceAdvice:39] >>>>> service start [UserService.getUser()] 
-[15:30:17.107:ERROR:ServiceAdvice:44] >>>>>  service end [UserService.getUser()] occurred error [No bean named 'transactionManger' available: No matching TransactionManager bean found for qualifier 'transactionManger' - neither qualifier match nor bean name match!]
-[15:30:17.107:INFO :ControllerAdvice:58] >>>>>   controller end [UserController.getUser()] with error [NoSuchBeanDefinitionException]
-[15:30:17.120:ERROR:[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'transactionManger' available: No matching TransactionManager bean found for qualifier 'transactionManger' - neither qualifier match nor bean name match!] with root cause
-org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'transactionManger' available: No matching TransactionManager bean found for qualifier 'transactionManger' - neither qualifier match nor bean name match!
-	at org.springframework.beans.factory.annotation.BeanFactoryAnnotationUtils.qualifiedBeanOfType(BeanFactoryAnnotationUtils.java:136)
-	at org.springframework.beans.factory.annotation.BeanFactoryAnnotationUtils.qualifiedBeanOfType(BeanFactoryAnnotationUtils.java:95)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.determineQualifiedTransactionManager(TransactionAspectSupport.java:515)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.determineTransactionManager(TransactionAspectSupport.java:496)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:342)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.repository.core.support.MethodInvocationValidator.invoke(MethodInvocationValidator.java:98)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
-	at com.sun.proxy.$Proxy111.findAll(Unknown Source)
-	at com.example.springbase.part.service.com.UserService.getUser(UserService.kt:21)
-	at com.example.springbase.part.service.com.UserService$$FastClassBySpringCGLIB$$73ee83c8.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.example.springbase.fwk.aop.ServiceAdvice.aroundService(ServiceAdvice.kt:41)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
-	at com.example.springbase.part.service.com.UserService$$EnhancerBySpringCGLIB$$69566170.getUser(<generated>)
-	at com.example.springbase.part.controller.com.UserController.getUser(UserController.kt:26)
-	at com.example.springbase.part.controller.com.UserController$$FastClassBySpringCGLIB$$4aa1f82a.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.example.springbase.fwk.aop.ControllerAdvice.aroundController(ControllerAdvice.kt:55)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
-	at com.example.springbase.part.controller.com.UserController$$EnhancerBySpringCGLIB$$30c38bd6.getUser(<generated>)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-[15:30:39.490:INFO :ThreadPoolTaskExecutor:218] Shutting down ExecutorService 'applicationTaskExecutor'
-[15:30:42.759:INFO :SpringBaseApplication$Companion:55] Starting SpringBaseApplication.Companion using Java 1.8.0_222 on junghoon.local with PID 35063 (/Users/kimjunghoon/tmp/personal/kakao-fit/build/classes/kotlin/main started by kimjunghoon in /Users/kimjunghoon/tmp/personal/kakao-fit)
-[15:30:42.761:DEBUG:SpringBaseApplication$Companion:56] Running with Spring Boot v2.4.1, Spring v5.3.2
-[15:30:42.761:INFO :SpringBaseApplication$Companion:664] The following profiles are active: local
-[15:30:43.725:INFO :EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
-[15:30:43.738:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-[15:30:43.739:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:30:43.739:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:30:43.739:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
-[15:30:43.740:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-[15:30:43.740:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-[15:30:43.740:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-[15:30:43.772:INFO :DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-[15:30:44.215:INFO :TomcatWebServer:108] Tomcat initialized with port(s): 5001 (http)
-[15:30:44.222:INFO :Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-5001"]
-[15:30:44.222:INFO :StandardService:173] Starting service [Tomcat]
-[15:30:44.223:INFO :StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-[15:30:44.279:INFO :[/]:173] Initializing Spring embedded WebApplicationContext
-[15:30:44.280:INFO :ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1477 ms
-[15:30:44.344:INFO :DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-[15:30:44.346:INFO :DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-[15:30:44.371:INFO :JasyptConfig:26] =============     Jasypt Config Start =============
-[15:30:44.377:INFO :JasyptConfig:38] =============       Jasypt Config End =============
-[15:30:44.379:INFO :DefaultLazyEncryptor:32] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@3e0fbeb5 with name: encryptorBean
-[15:30:44.415:INFO :DataSourceConfig:30] DataSource Config Start
-[15:30:44.418:INFO :DataSourceConfig:36] DataSource Config End
-[15:30:44.448:INFO :MybatisConfig:40] ===== MybatisConfig Start =====
-[15:30:44.450:INFO :MybatisConfig:47] =====   MybatisConfig End =====
-[15:30:44.575:INFO :MybatisConfig:53] ===== sqlSessionTemplate Start =====
-[15:30:44.578:INFO :MybatisConfig:55] =====   sqlSessionTemplate End =====
-[15:30:44.649:INFO :JpaConfig:39] ===== EntityManagerFactory Start =====
-[15:30:44.684:DEBUG:logging:152] Logging Provider: org.jboss.logging.Log4j2LoggerProvider
-[15:30:45.709:INFO :LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-[15:30:45.713:INFO :JpaConfig:58] =====   EntityManagerFactory End =====
-[15:30:46.499:INFO :JpaConfig:64] ===== TransactionManger Start =====
-[15:30:46.500:INFO :JpaConfig:66] =====   TransactionManger End =====
-[15:30:46.614:INFO :ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-[15:30:46.875:INFO :Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-5001"]
-[15:30:46.906:INFO :TomcatWebServer:220] Tomcat started on port(s): 5001 (http) with context path ''
-[15:30:47.119:INFO :SpringBaseApplication$Companion:61] Started SpringBaseApplication.Companion in 4.832 seconds (JVM running for 5.356)
-[15:30:47.124:INFO :SpringBaseApplication:34] =============     Check Profile START =============
-[15:30:47.124:INFO :SpringBaseApplication:36] local
-[15:30:47.124:INFO :SpringBaseApplication:37] =============       Check Profile End ============= : activate profile count: 1
-[15:30:47.125:INFO :SpringBaseApplication:40] ============= Check Loaded Bean START =============
-[15:30:47.125:INFO :SpringBaseApplication:41] Loaded Bean : 375
-[15:30:47.125:INFO :SpringBaseApplication:42] =============   Check Loaded Bean END =============
-[15:30:47.125:INFO :SpringBaseApplication:44] =============             AppMain End ============= : 4926 ms
-[15:30:53.017:INFO :[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-[15:30:53.018:INFO :DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-[15:30:53.020:INFO :DispatcherServlet:547] Completed initialization in 2 ms
-[15:30:55.698:INFO :ControllerAdvice:40]   session ID : A65E5DA82603DCAEBA561B4743C9E4AA
-[15:30:55.699:INFO :ControllerAdvice:41]    client IP : null
-[15:30:55.699:INFO :ControllerAdvice:42]          GID : dcc7f00f-40c4-4366-92f8-159da41e4f0e
-[15:30:55.699:INFO :ControllerAdvice:43]       method : Current HttpServletRequest.method
-[15:30:55.699:INFO :ControllerAdvice:44]  request URL : GET
-[15:30:55.700:INFO :ControllerAdvice:45] query string : null
-[15:30:55.702:INFO :ControllerAdvice:51]         body : null
-[15:30:55.702:INFO :ControllerAdvice:52]      referer : http://localhost:5001/swagger-ui/
-[15:30:55.703:INFO :ControllerAdvice:53] >>>>> controller start [UserController.getUser()]
-[15:30:55.705:INFO :ServiceAdvice:39] >>>>> service start [UserService.getUser()] 
-[15:30:55.832:DEBUG:SQL:144] 
-    select
-        comusermst0_.user_id as user_id1_0_,
-        comusermst0_.create_dt as create_d2_0_,
-        comusermst0_.create_user_id as create_u3_0_,
-        comusermst0_.nick_name as nick_nam4_0_,
-        comusermst0_.update_dt as update_d5_0_,
-        comusermst0_.update_user_id as update_u6_0_,
-        comusermst0_.user_name as user_nam7_0_ 
-    from
-        com_user_mst comusermst0_
-[15:30:55.849:ERROR:SqlExceptionHelper:142] ERROR: relation "com_user_mst" does not exist
-  Position: 299
-[15:30:55.858:ERROR:ServiceAdvice:44] >>>>>  service end [UserService.getUser()] occurred error [org.hibernate.exception.SQLGrammarException: could not extract ResultSet]
-[15:30:55.858:INFO :ControllerAdvice:58] >>>>>   controller end [UserController.getUser()] with error [PersistenceException]
-[15:30:55.878:ERROR:[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not extract ResultSet] with root cause
-org.postgresql.util.PSQLException: ERROR: relation "com_user_mst" does not exist
-  Position: 299
-	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
-	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
-	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
-	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
-	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:164)
-	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:114)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:57)
-	at org.hibernate.loader.Loader.getResultSet(Loader.java:2304)
-	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2057)
-	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2019)
-	at org.hibernate.loader.Loader.doQuery(Loader.java:948)
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:349)
-	at org.hibernate.loader.Loader.doList(Loader.java:2850)
-	at org.hibernate.loader.Loader.doList(Loader.java:2832)
-	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2664)
-	at org.hibernate.loader.Loader.list(Loader.java:2659)
-	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506)
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400)
-	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219)
-	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1414)
-	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1625)
-	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1593)
-	at org.hibernate.query.Query.getResultList(Query.java:165)
-	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76)
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:356)
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
-	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:524)
-	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:531)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:156)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:131)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.repository.core.support.MethodInvocationValidator.invoke(MethodInvocationValidator.java:98)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
-	at com.sun.proxy.$Proxy111.findAll(Unknown Source)
-	at com.example.springbase.part.service.com.UserService.getUser(UserService.kt:21)
-	at com.example.springbase.part.service.com.UserService$$FastClassBySpringCGLIB$$73ee83c8.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.example.springbase.fwk.aop.ServiceAdvice.aroundService(ServiceAdvice.kt:41)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
-	at com.example.springbase.part.service.com.UserService$$EnhancerBySpringCGLIB$$f0dd36cc.getUser(<generated>)
-	at com.example.springbase.part.controller.com.UserController.getUser(UserController.kt:26)
-	at com.example.springbase.part.controller.com.UserController$$FastClassBySpringCGLIB$$4aa1f82a.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.example.springbase.fwk.aop.ControllerAdvice.aroundController(ControllerAdvice.kt:55)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
-	at com.example.springbase.part.controller.com.UserController$$EnhancerBySpringCGLIB$$b84a6132.getUser(<generated>)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-[15:35:56.062:INFO :ThreadPoolTaskExecutor:218] Shutting down ExecutorService 'applicationTaskExecutor'
-[15:35:58.783:INFO :SpringBaseApplication$Companion:55] Starting SpringBaseApplication.Companion using Java 1.8.0_222 on junghoon.local with PID 35483 (/Users/kimjunghoon/tmp/personal/kakao-fit/build/classes/kotlin/main started by kimjunghoon in /Users/kimjunghoon/tmp/personal/kakao-fit)
-[15:35:58.783:DEBUG:SpringBaseApplication$Companion:56] Running with Spring Boot v2.4.1, Spring v5.3.2
-[15:35:58.784:INFO :SpringBaseApplication$Companion:664] The following profiles are active: local
-[15:35:59.686:INFO :EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
-[15:35:59.699:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-[15:35:59.700:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:35:59.700:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:35:59.700:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
-[15:35:59.701:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-[15:35:59.701:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-[15:35:59.701:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-[15:35:59.728:INFO :DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-[15:36:00.187:INFO :TomcatWebServer:108] Tomcat initialized with port(s): 5001 (http)
-[15:36:00.193:INFO :Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-5001"]
-[15:36:00.194:INFO :StandardService:173] Starting service [Tomcat]
-[15:36:00.194:INFO :StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-[15:36:00.257:INFO :[/]:173] Initializing Spring embedded WebApplicationContext
-[15:36:00.257:INFO :ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1441 ms
-[15:36:00.323:INFO :DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-[15:36:00.325:INFO :DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-[15:36:00.350:INFO :JasyptConfig:26] =============     Jasypt Config Start =============
-[15:36:00.357:INFO :JasyptConfig:38] =============       Jasypt Config End =============
-[15:36:00.359:INFO :DefaultLazyEncryptor:32] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@3e0fbeb5 with name: encryptorBean
-[15:36:00.396:INFO :DataSourceConfig:30] DataSource Config Start
-[15:36:00.399:INFO :DataSourceConfig:36] DataSource Config End
-[15:36:00.430:INFO :MybatisConfig:40] ===== MybatisConfig Start =====
-[15:36:00.432:INFO :MybatisConfig:47] =====   MybatisConfig End =====
-[15:36:00.563:INFO :MybatisConfig:53] ===== sqlSessionTemplate Start =====
-[15:36:00.566:INFO :MybatisConfig:55] =====   sqlSessionTemplate End =====
-[15:36:00.641:INFO :JpaConfig:39] ===== EntityManagerFactory Start =====
-[15:36:00.675:DEBUG:logging:152] Logging Provider: org.jboss.logging.Log4j2LoggerProvider
-[15:36:01.593:INFO :LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-[15:36:01.597:INFO :JpaConfig:58] =====   EntityManagerFactory End =====
-[15:36:02.402:INFO :JpaConfig:64] ===== TransactionManger Start =====
-[15:36:02.402:INFO :JpaConfig:66] =====   TransactionManger End =====
-[15:36:02.519:INFO :ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-[15:36:02.767:INFO :Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-5001"]
-[15:36:02.801:INFO :TomcatWebServer:220] Tomcat started on port(s): 5001 (http) with context path ''
-[15:36:03.013:INFO :SpringBaseApplication$Companion:61] Started SpringBaseApplication.Companion in 4.609 seconds (JVM running for 5.248)
-[15:36:03.018:INFO :SpringBaseApplication:34] =============     Check Profile START =============
-[15:36:03.019:INFO :SpringBaseApplication:36] local
-[15:36:03.019:INFO :SpringBaseApplication:37] =============       Check Profile End ============= : activate profile count: 1
-[15:36:03.019:INFO :SpringBaseApplication:40] ============= Check Loaded Bean START =============
-[15:36:03.019:INFO :SpringBaseApplication:41] Loaded Bean : 375
-[15:36:03.019:INFO :SpringBaseApplication:42] =============   Check Loaded Bean END =============
-[15:36:03.019:INFO :SpringBaseApplication:44] =============             AppMain End ============= : 4713 ms
-[15:36:28.682:INFO :[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-[15:36:28.683:INFO :DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-[15:36:28.684:INFO :DispatcherServlet:547] Completed initialization in 1 ms
-[15:36:34.936:INFO :ControllerAdvice:40]   session ID : 6A5F0FAE81A8D0E9DF1ECBF45937A0A4
-[15:36:34.937:INFO :ControllerAdvice:41]    client IP : null
-[15:36:34.937:INFO :ControllerAdvice:42]          GID : a939eeee-6112-4996-b9fe-c787069fe13e
-[15:36:34.937:INFO :ControllerAdvice:43]       method : Current HttpServletRequest.method
-[15:36:34.938:INFO :ControllerAdvice:44]  request URL : GET
-[15:36:34.938:INFO :ControllerAdvice:45] query string : null
-[15:36:34.941:INFO :ControllerAdvice:51]         body : null
-[15:36:34.941:INFO :ControllerAdvice:52]      referer : http://localhost:5001/swagger-ui/
-[15:36:34.941:INFO :ControllerAdvice:53] >>>>> controller start [UserController.getUser()]
-[15:36:34.944:INFO :ServiceAdvice:39] >>>>> service start [UserService.getUser()] 
-[15:36:35.037:DEBUG:SQL:144] 
-    select
-        comusermst0_.user_id as user_id1_0_,
-        comusermst0_.create_dt as create_d2_0_,
-        comusermst0_.create_user_id as create_u3_0_,
-        comusermst0_.nick_name as nick_nam4_0_,
-        comusermst0_.update_dt as update_d5_0_,
-        comusermst0_.update_user_id as update_u6_0_,
-        comusermst0_.user_name as user_nam7_0_ 
-    from
-        com_user_mst comusermst0_
-[15:36:35.052:ERROR:SqlExceptionHelper:142] ERROR: relation "com_user_mst" does not exist
-  Position: 299
-[15:36:35.060:ERROR:ServiceAdvice:44] >>>>>  service end [UserService.getUser()] occurred error [org.hibernate.exception.SQLGrammarException: could not extract ResultSet]
-[15:36:35.060:INFO :ControllerAdvice:58] >>>>>   controller end [UserController.getUser()] with error [PersistenceException]
-[15:36:35.078:ERROR:[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not extract ResultSet] with root cause
-org.postgresql.util.PSQLException: ERROR: relation "com_user_mst" does not exist
-  Position: 299
-	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
-	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
-	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
-	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
-	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:164)
-	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:114)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:57)
-	at org.hibernate.loader.Loader.getResultSet(Loader.java:2304)
-	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2057)
-	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2019)
-	at org.hibernate.loader.Loader.doQuery(Loader.java:948)
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:349)
-	at org.hibernate.loader.Loader.doList(Loader.java:2850)
-	at org.hibernate.loader.Loader.doList(Loader.java:2832)
-	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2664)
-	at org.hibernate.loader.Loader.list(Loader.java:2659)
-	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506)
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400)
-	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219)
-	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1414)
-	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1625)
-	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1593)
-	at org.hibernate.query.Query.getResultList(Query.java:165)
-	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76)
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:356)
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
-	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:524)
-	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:531)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:156)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:131)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.repository.core.support.MethodInvocationValidator.invoke(MethodInvocationValidator.java:98)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
-	at com.sun.proxy.$Proxy111.findAll(Unknown Source)
-	at com.example.springbase.part.service.com.UserService.getUser(UserService.kt:21)
-	at com.example.springbase.part.service.com.UserService$$FastClassBySpringCGLIB$$73ee83c8.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.example.springbase.fwk.aop.ServiceAdvice.aroundService(ServiceAdvice.kt:41)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
-	at com.example.springbase.part.service.com.UserService$$EnhancerBySpringCGLIB$$80e34abb.getUser(<generated>)
-	at com.example.springbase.part.controller.com.UserController.getUser(UserController.kt:26)
-	at com.example.springbase.part.controller.com.UserController$$FastClassBySpringCGLIB$$4aa1f82a.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.example.springbase.fwk.aop.ControllerAdvice.aroundController(ControllerAdvice.kt:55)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
-	at com.example.springbase.part.controller.com.UserController$$EnhancerBySpringCGLIB$$48507521.getUser(<generated>)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-[15:38:24.614:INFO :ThreadPoolTaskExecutor:218] Shutting down ExecutorService 'applicationTaskExecutor'
-[15:38:28.684:INFO :SpringBaseApplication$Companion:55] Starting SpringBaseApplication.Companion using Java 1.8.0_222 on junghoon.local with PID 35669 (/Users/kimjunghoon/tmp/personal/kakao-fit/build/classes/kotlin/main started by kimjunghoon in /Users/kimjunghoon/tmp/personal/kakao-fit)
-[15:38:28.686:DEBUG:SpringBaseApplication$Companion:56] Running with Spring Boot v2.4.1, Spring v5.3.2
-[15:38:28.686:INFO :SpringBaseApplication$Companion:664] The following profiles are active: local
-[15:38:29.615:INFO :EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
-[15:38:29.631:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-[15:38:29.632:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:38:29.632:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[15:38:29.632:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
-[15:38:29.633:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-[15:38:29.633:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-[15:38:29.633:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-[15:38:29.666:INFO :DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-[15:38:30.112:INFO :TomcatWebServer:108] Tomcat initialized with port(s): 5001 (http)
-[15:38:30.119:INFO :Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-5001"]
-[15:38:30.119:INFO :StandardService:173] Starting service [Tomcat]
-[15:38:30.120:INFO :StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-[15:38:30.175:INFO :[/]:173] Initializing Spring embedded WebApplicationContext
-[15:38:30.176:INFO :ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1448 ms
-[15:38:30.239:INFO :DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-[15:38:30.240:INFO :DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-[15:38:30.264:INFO :JasyptConfig:26] =============     Jasypt Config Start =============
-[15:38:30.270:INFO :JasyptConfig:38] =============       Jasypt Config End =============
-[15:38:30.273:INFO :DefaultLazyEncryptor:32] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@3e0fbeb5 with name: encryptorBean
-[15:38:30.310:INFO :DataSourceConfig:30] DataSource Config Start
-[15:38:30.313:INFO :DataSourceConfig:36] DataSource Config End
-[15:38:30.341:INFO :MybatisConfig:40] ===== MybatisConfig Start =====
-[15:38:30.343:INFO :MybatisConfig:47] =====   MybatisConfig End =====
-[15:38:30.470:INFO :MybatisConfig:53] ===== sqlSessionTemplate Start =====
-[15:38:30.473:INFO :MybatisConfig:55] =====   sqlSessionTemplate End =====
-[15:38:30.546:INFO :JpaConfig:39] ===== EntityManagerFactory Start =====
-[15:38:30.580:DEBUG:logging:152] Logging Provider: org.jboss.logging.Log4j2LoggerProvider
-[15:38:31.508:INFO :LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-[15:38:31.512:INFO :JpaConfig:59] =====   EntityManagerFactory End =====
-[15:38:32.311:INFO :JpaConfig:65] ===== TransactionManger Start =====
-[15:38:32.312:INFO :JpaConfig:67] =====   TransactionManger End =====
-[15:38:32.427:INFO :ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-[15:38:32.696:INFO :Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-5001"]
-[15:38:32.731:INFO :TomcatWebServer:220] Tomcat started on port(s): 5001 (http) with context path ''
-[15:38:32.960:INFO :SpringBaseApplication$Companion:61] Started SpringBaseApplication.Companion in 4.704 seconds (JVM running for 5.353)
-[15:38:32.966:INFO :SpringBaseApplication:34] =============     Check Profile START =============
-[15:38:32.966:INFO :SpringBaseApplication:36] local
-[15:38:32.967:INFO :SpringBaseApplication:37] =============       Check Profile End ============= : activate profile count: 1
-[15:38:32.967:INFO :SpringBaseApplication:40] ============= Check Loaded Bean START =============
-[15:38:32.967:INFO :SpringBaseApplication:41] Loaded Bean : 375
-[15:38:32.967:INFO :SpringBaseApplication:42] =============   Check Loaded Bean END =============
-[15:38:32.967:INFO :SpringBaseApplication:44] =============             AppMain End ============= : 4796 ms
-[15:38:38.440:INFO :[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-[15:38:38.440:INFO :DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-[15:38:38.442:INFO :DispatcherServlet:547] Completed initialization in 2 ms
-[15:38:38.495:INFO :ControllerAdvice:40]   session ID : 395EF7DE698317342D03E1D92168A7E3
-[15:38:38.495:INFO :ControllerAdvice:41]    client IP : null
-[15:38:38.495:INFO :ControllerAdvice:42]          GID : 60d03e61-8853-4313-875c-ae0856c4adfb
-[15:38:38.496:INFO :ControllerAdvice:43]       method : Current HttpServletRequest.method
-[15:38:38.496:INFO :ControllerAdvice:44]  request URL : GET
-[15:38:38.496:INFO :ControllerAdvice:45] query string : null
-[15:38:38.498:INFO :ControllerAdvice:51]         body : null
-[15:38:38.499:INFO :ControllerAdvice:52]      referer : http://localhost:5001/swagger-ui/
-[15:38:38.499:INFO :ControllerAdvice:53] >>>>> controller start [UserController.getUser()]
-[15:38:38.502:INFO :ServiceAdvice:39] >>>>> service start [UserService.getUser()] 
-[15:38:38.612:DEBUG:SQL:144] 
+[14:51:00.683:INFO :SpringBaseApplication$Companion:55] Starting SpringBaseApplication.Companion using Java 1.8.0_222 on junghoon.local with PID 35404 (/Users/kimjunghoon/tmp/personal/kakao-fit/build/classes/kotlin/main started by kimjunghoon in /Users/kimjunghoon/tmp/personal/kakao-fit)
+[14:51:00.684:DEBUG:SpringBaseApplication$Companion:56] Running with Spring Boot v2.4.1, Spring v5.3.2
+[14:51:00.685:INFO :SpringBaseApplication$Companion:664] The following profiles are active: local
+[14:51:01.568:INFO :EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+[14:51:01.582:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+[14:51:01.582:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+[14:51:01.583:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+[14:51:01.583:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+[14:51:01.583:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+[14:51:01.583:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+[14:51:01.583:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+[14:51:01.618:INFO :DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+[14:51:02.056:INFO :TomcatWebServer:108] Tomcat initialized with port(s): 5001 (http)
+[14:51:02.063:INFO :Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-5001"]
+[14:51:02.064:INFO :StandardService:173] Starting service [Tomcat]
+[14:51:02.064:INFO :StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+[14:51:02.126:INFO :[/]:173] Initializing Spring embedded WebApplicationContext
+[14:51:02.126:INFO :ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1411 ms
+[14:51:02.187:INFO :DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+[14:51:02.189:INFO :DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+[14:51:02.212:INFO :JasyptConfig:26] =============     Jasypt Config Start =============
+[14:51:02.218:INFO :JasyptConfig:38] =============       Jasypt Config End =============
+[14:51:02.221:INFO :DefaultLazyEncryptor:32] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@5f5effb0 with name: encryptorBean
+[14:51:02.256:INFO :DataSourceConfig:30] DataSource Config Start
+[14:51:02.258:INFO :DataSourceConfig:36] DataSource Config End
+[14:51:02.288:INFO :MybatisConfig:40] ===== MybatisConfig Start =====
+[14:51:02.290:INFO :MybatisConfig:47] =====   MybatisConfig End =====
+[14:51:02.422:INFO :MybatisConfig:53] ===== sqlSessionTemplate Start =====
+[14:51:02.425:INFO :MybatisConfig:55] =====   sqlSessionTemplate End =====
+[14:51:02.500:INFO :JpaConfig:39] ===== EntityManagerFactory Start =====
+[14:51:02.533:DEBUG:logging:152] Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+[14:51:03.398:INFO :LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[14:51:03.401:INFO :JpaConfig:59] =====   EntityManagerFactory End =====
+[14:51:04.192:INFO :JpaConfig:65] ===== TransactionManger Start =====
+[14:51:04.192:INFO :JpaConfig:67] =====   TransactionManger End =====
+[14:51:04.308:INFO :ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+[14:51:04.581:INFO :Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-5001"]
+[14:51:04.614:INFO :TomcatWebServer:220] Tomcat started on port(s): 5001 (http) with context path ''
+[14:51:04.830:INFO :SpringBaseApplication$Companion:61] Started SpringBaseApplication.Companion in 4.515 seconds (JVM running for 4.951)
+[14:51:04.836:INFO :SpringBaseApplication:34] =============     Check Profile START =============
+[14:51:04.836:INFO :SpringBaseApplication:36] local
+[14:51:04.836:INFO :SpringBaseApplication:37] =============       Check Profile End ============= : activate profile count: 1
+[14:51:04.836:INFO :SpringBaseApplication:40] ============= Check Loaded Bean START =============
+[14:51:04.837:INFO :SpringBaseApplication:41] Loaded Bean : 375
+[14:51:04.837:INFO :SpringBaseApplication:42] =============   Check Loaded Bean END =============
+[14:51:04.837:INFO :SpringBaseApplication:44] =============             AppMain End ============= : 4618 ms
+[14:51:12.131:INFO :[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[14:51:12.131:INFO :DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+[14:51:12.134:INFO :DispatcherServlet:547] Completed initialization in 1 ms
+[15:31:13.435:INFO :ControllerAdvice:40]   session ID : E6150850355FD7537BCE97169B45533C
+[15:31:13.437:INFO :ControllerAdvice:41]    client IP : null
+[15:31:13.438:INFO :ControllerAdvice:42]          GID : 3df45a31-3cee-4659-8cde-8ad5b3463d05
+[15:31:13.438:INFO :ControllerAdvice:43]       method : Current HttpServletRequest.method
+[15:31:13.438:INFO :ControllerAdvice:44]  request URL : GET
+[15:31:13.438:INFO :ControllerAdvice:45] query string : null
+[15:31:13.445:INFO :ControllerAdvice:51]         body : null
+[15:31:13.445:INFO :ControllerAdvice:52]      referer : http://localhost:3001/
+[15:31:13.445:INFO :ControllerAdvice:53] >>>>> controller start [TestController.testController()]
+[15:31:13.450:INFO :ServiceAdvice:39] >>>>> service start [TestService.testService()] 
+[15:31:13.480:DEBUG:selectTestOne:137] ==>  Preparing: select /* selectTestOne @ test @ 테스트 단건 조회 */ id , value from ringfit.test_mst limit 1
+[15:31:13.492:DEBUG:selectTestOne:137] ==> Parameters: 
+[15:31:13.617:DEBUG:selectTestOne:137] <==      Total: 1
+[15:31:13.619:INFO :ServiceAdvice:48] <<<<<   service end [TestService.testService()] [169 ms]
+[15:31:13.619:INFO :ControllerAdvice:63] <<<<<   controller end [TestController.testController()] [174 ms] 
+[15:31:41.803:INFO :ControllerAdvice:40]   session ID : 91EC352B930F248DFE5223590A9D83C3
+[15:31:41.804:INFO :ControllerAdvice:41]    client IP : null
+[15:31:41.804:INFO :ControllerAdvice:42]          GID : d1638438-b38f-4cba-ac2e-a1270a731c03
+[15:31:41.804:INFO :ControllerAdvice:43]       method : Current HttpServletRequest.method
+[15:31:41.804:INFO :ControllerAdvice:44]  request URL : GET
+[15:31:41.805:INFO :ControllerAdvice:45] query string : null
+[15:31:41.805:INFO :ControllerAdvice:51]         body : null
+[15:31:41.805:INFO :ControllerAdvice:52]      referer : http://localhost:5001/swagger-ui/
+[15:31:41.805:INFO :ControllerAdvice:53] >>>>> controller start [TestController.testController()]
+[15:31:41.806:INFO :ServiceAdvice:39] >>>>> service start [TestService.testService()] 
+[15:31:41.806:DEBUG:selectTestOne:137] ==>  Preparing: select /* selectTestOne @ test @ 테스트 단건 조회 */ id , value from ringfit.test_mst limit 1
+[15:31:41.807:DEBUG:selectTestOne:137] ==> Parameters: 
+[15:31:41.817:DEBUG:selectTestOne:137] <==      Total: 1
+[15:31:41.818:INFO :ServiceAdvice:48] <<<<<   service end [TestService.testService()] [12 ms]
+[15:31:41.819:INFO :ControllerAdvice:63] <<<<<   controller end [TestController.testController()] [13 ms] 
+[15:32:16.863:INFO :ControllerAdvice:40]   session ID : 4496C705CD48AC1BEBBF570C81474859
+[15:32:16.865:INFO :ControllerAdvice:41]    client IP : null
+[15:32:16.865:INFO :ControllerAdvice:42]          GID : 0363f55e-f0ec-4800-b461-e49be16858a5
+[15:32:16.866:INFO :ControllerAdvice:43]       method : Current HttpServletRequest.method
+[15:32:16.866:INFO :ControllerAdvice:44]  request URL : GET
+[15:32:16.866:INFO :ControllerAdvice:45] query string : null
+[15:32:16.868:INFO :ControllerAdvice:51]         body : null
+[15:32:16.868:INFO :ControllerAdvice:52]      referer : http://localhost:3001/
+[15:32:16.868:INFO :ControllerAdvice:53] >>>>> controller start [UserController.getUser()]
+[15:32:16.872:INFO :ServiceAdvice:39] >>>>> service start [UserService.getUser()] 
+[15:32:17.103:DEBUG:SQL:144] 
     select
         comusermst0_.user_id as user_id1_0_,
         comusermst0_.create_dt as create_d2_0_,
@@ -980,52 +155,101 @@ org.postgresql.util.PSQLException: ERROR: relation "com_user_mst" does not exist
         comusermst0_.user_name as user_nam7_0_ 
     from
         ringfit.com_user_mst comusermst0_
-[15:38:38.671:INFO :ServiceAdvice:48] <<<<<   service end [UserService.getUser()] [168 ms]
-[15:38:38.671:INFO :ControllerAdvice:63] <<<<<   controller end [UserController.getUser()] [172 ms] 
-[18:15:56.981:INFO :ThreadPoolTaskExecutor:218] Shutting down ExecutorService 'applicationTaskExecutor'
-[18:17:20.658:INFO :SpringBaseApplication$Companion:55] Starting SpringBaseApplication.Companion using Java 1.8.0_222 on junghoon.local with PID 51331 (/Users/kimjunghoon/tmp/personal/kakao-fit/build/classes/kotlin/main started by kimjunghoon in /Users/kimjunghoon/tmp/personal/kakao-fit)
-[18:17:20.660:DEBUG:SpringBaseApplication$Companion:56] Running with Spring Boot v2.4.1, Spring v5.3.2
-[18:17:20.660:INFO :SpringBaseApplication$Companion:664] The following profiles are active: local
-[18:17:21.541:INFO :EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
-[18:17:21.557:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-[18:17:21.558:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[18:17:21.558:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-[18:17:21.559:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
-[18:17:21.559:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-[18:17:21.559:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-[18:17:21.560:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-[18:17:21.591:INFO :DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-[18:17:21.981:INFO :TomcatWebServer:108] Tomcat initialized with port(s): 5001 (http)
-[18:17:21.988:INFO :Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-5001"]
-[18:17:21.988:INFO :StandardService:173] Starting service [Tomcat]
-[18:17:21.989:INFO :StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-[18:17:22.047:INFO :[/]:173] Initializing Spring embedded WebApplicationContext
-[18:17:22.047:INFO :ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1349 ms
-[18:17:22.108:INFO :DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-[18:17:22.110:INFO :DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-[18:17:22.137:INFO :JasyptConfig:26] =============     Jasypt Config Start =============
-[18:17:22.143:INFO :JasyptConfig:38] =============       Jasypt Config End =============
-[18:17:22.146:INFO :DefaultLazyEncryptor:32] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@19e0dffe with name: encryptorBean
-[18:17:22.181:INFO :DataSourceConfig:30] DataSource Config Start
-[18:17:22.183:INFO :DataSourceConfig:36] DataSource Config End
-[18:17:22.211:INFO :MybatisConfig:40] ===== MybatisConfig Start =====
-[18:17:22.213:INFO :MybatisConfig:47] =====   MybatisConfig End =====
-[18:17:22.340:INFO :MybatisConfig:53] ===== sqlSessionTemplate Start =====
-[18:17:22.343:INFO :MybatisConfig:55] =====   sqlSessionTemplate End =====
-[18:17:22.407:INFO :JpaConfig:39] ===== EntityManagerFactory Start =====
-[18:17:22.437:DEBUG:logging:152] Logging Provider: org.jboss.logging.Log4j2LoggerProvider
-[18:17:23.301:INFO :LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-[18:17:23.305:INFO :JpaConfig:59] =====   EntityManagerFactory End =====
-[18:17:23.980:INFO :JpaConfig:65] ===== TransactionManger Start =====
-[18:17:23.980:INFO :JpaConfig:67] =====   TransactionManger End =====
-[18:17:24.089:INFO :ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-[18:17:24.326:INFO :Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-5001"]
-[18:17:24.350:INFO :TomcatWebServer:220] Tomcat started on port(s): 5001 (http) with context path ''
-[18:17:24.532:INFO :SpringBaseApplication$Companion:61] Started SpringBaseApplication.Companion in 4.334 seconds (JVM running for 5.065)
-[18:17:24.538:INFO :SpringBaseApplication:34] =============     Check Profile START =============
-[18:17:24.538:INFO :SpringBaseApplication:36] local
-[18:17:24.538:INFO :SpringBaseApplication:37] =============       Check Profile End ============= : activate profile count: 1
-[18:17:24.538:INFO :SpringBaseApplication:40] ============= Check Loaded Bean START =============
-[18:17:24.538:INFO :SpringBaseApplication:41] Loaded Bean : 375
-[18:17:24.539:INFO :SpringBaseApplication:42] =============   Check Loaded Bean END =============
-[18:17:24.539:INFO :SpringBaseApplication:44] =============             AppMain End ============= : 4471 ms
+[15:32:17.153:INFO :ServiceAdvice:48] <<<<<   service end [UserService.getUser()] [280 ms]
+[15:32:17.153:INFO :ControllerAdvice:63] <<<<<   controller end [UserController.getUser()] [284 ms] 
+[15:42:04.624:INFO :ThreadPoolTaskExecutor:218] Shutting down ExecutorService 'applicationTaskExecutor'
+[15:42:12.975:INFO :SpringBaseApplication$Companion:55] Starting SpringBaseApplication.Companion using Java 1.8.0_222 on junghoon.local with PID 39723 (/Users/kimjunghoon/tmp/personal/kakao-fit/build/classes/kotlin/main started by kimjunghoon in /Users/kimjunghoon/tmp/personal/kakao-fit)
+[15:42:12.977:DEBUG:SpringBaseApplication$Companion:56] Running with Spring Boot v2.4.1, Spring v5.3.2
+[15:42:12.977:INFO :SpringBaseApplication$Companion:664] The following profiles are active: local
+[15:42:14.138:INFO :EnableEncryptablePropertiesBeanFactoryPostProcessor:39] Post-processing PropertySource instances
+[15:42:14.155:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+[15:42:14.156:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+[15:42:14.156:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+[15:42:14.157:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+[15:42:14.157:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+[15:42:14.157:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+[15:42:14.157:INFO :EncryptablePropertySourceConverter:56] Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+[15:42:14.190:INFO :DefaultLazyPropertyFilter:31] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+[15:42:14.590:INFO :TomcatWebServer:108] Tomcat initialized with port(s): 5001 (http)
+[15:42:14.597:INFO :Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-5001"]
+[15:42:14.597:INFO :StandardService:173] Starting service [Tomcat]
+[15:42:14.598:INFO :StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+[15:42:14.654:INFO :[/]:173] Initializing Spring embedded WebApplicationContext
+[15:42:14.655:INFO :ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1625 ms
+[15:42:14.718:INFO :DefaultLazyPropertyResolver:35] Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+[15:42:14.720:INFO :DefaultLazyPropertyDetector:35] Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+[15:42:14.745:INFO :JasyptConfig:26] =============     Jasypt Config Start =============
+[15:42:14.751:INFO :JasyptConfig:38] =============       Jasypt Config End =============
+[15:42:14.753:INFO :DefaultLazyEncryptor:32] Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@5f5effb0 with name: encryptorBean
+[15:42:14.789:INFO :DataSourceConfig:30] DataSource Config Start
+[15:42:14.792:INFO :DataSourceConfig:36] DataSource Config End
+[15:42:14.820:INFO :MybatisConfig:40] ===== MybatisConfig Start =====
+[15:42:14.822:INFO :MybatisConfig:47] =====   MybatisConfig End =====
+[15:42:14.952:INFO :MybatisConfig:53] ===== sqlSessionTemplate Start =====
+[15:42:14.955:INFO :MybatisConfig:55] =====   sqlSessionTemplate End =====
+[15:42:15.028:INFO :JpaConfig:39] ===== EntityManagerFactory Start =====
+[15:42:15.063:DEBUG:logging:152] Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+[15:42:16.076:INFO :LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[15:42:16.079:INFO :JpaConfig:59] =====   EntityManagerFactory End =====
+[15:42:16.843:INFO :JpaConfig:65] ===== TransactionManger Start =====
+[15:42:16.844:INFO :JpaConfig:67] =====   TransactionManger End =====
+[15:42:16.955:INFO :ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+[15:42:17.225:INFO :Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-5001"]
+[15:42:17.258:INFO :TomcatWebServer:220] Tomcat started on port(s): 5001 (http) with context path ''
+[15:42:17.477:INFO :SpringBaseApplication$Companion:61] Started SpringBaseApplication.Companion in 4.974 seconds (JVM running for 5.726)
+[15:42:17.483:INFO :SpringBaseApplication:34] =============     Check Profile START =============
+[15:42:17.483:INFO :SpringBaseApplication:36] local
+[15:42:17.483:INFO :SpringBaseApplication:37] =============       Check Profile End ============= : activate profile count: 1
+[15:42:17.483:INFO :SpringBaseApplication:40] ============= Check Loaded Bean START =============
+[15:42:17.484:INFO :SpringBaseApplication:41] Loaded Bean : 376
+[15:42:17.484:INFO :SpringBaseApplication:42] =============   Check Loaded Bean END =============
+[15:42:17.484:INFO :SpringBaseApplication:44] =============             AppMain End ============= : 5104 ms
+[15:42:43.378:INFO :[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:42:43.379:INFO :DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+[15:42:43.382:INFO :DispatcherServlet:547] Completed initialization in 3 ms
+[15:42:54.314:INFO :ControllerAdvice:40]   session ID : D37A7944427DE4EC38E908A19788D599
+[15:42:54.315:INFO :ControllerAdvice:41]    client IP : null
+[15:42:54.315:INFO :ControllerAdvice:42]          GID : a66417cc-07d8-4f5a-aead-060fc194c1e1
+[15:42:54.316:INFO :ControllerAdvice:43]       method : Current HttpServletRequest.method
+[15:42:54.316:INFO :ControllerAdvice:44]  request URL : GET
+[15:42:54.316:INFO :ControllerAdvice:45] query string : null
+[15:42:54.319:INFO :ControllerAdvice:51]         body : null
+[15:42:54.319:INFO :ControllerAdvice:52]      referer : http://localhost:3001/
+[15:42:54.319:INFO :ControllerAdvice:53] >>>>> controller start [UserController.getUser()]
+[15:42:54.323:INFO :ServiceAdvice:39] >>>>> service start [UserService.getUser()] 
+[15:42:54.440:DEBUG:SQL:144] 
+    select
+        comusermst0_.user_id as user_id1_0_,
+        comusermst0_.create_dt as create_d2_0_,
+        comusermst0_.create_user_id as create_u3_0_,
+        comusermst0_.nick_name as nick_nam4_0_,
+        comusermst0_.update_dt as update_d5_0_,
+        comusermst0_.update_user_id as update_u6_0_,
+        comusermst0_.user_name as user_nam7_0_ 
+    from
+        ringfit.com_user_mst comusermst0_
+[15:42:54.474:INFO :ServiceAdvice:48] <<<<<   service end [UserService.getUser()] [151 ms]
+[15:42:54.475:INFO :ControllerAdvice:63] <<<<<   controller end [UserController.getUser()] [156 ms] 
+[15:43:19.965:INFO :ControllerAdvice:40]   session ID : 353943FC70EEFDD9ABF9F78CD13BA46E
+[15:43:19.966:INFO :ControllerAdvice:41]    client IP : null
+[15:43:19.966:INFO :ControllerAdvice:42]          GID : b720f9a4-e97c-4223-b218-b5e6e9dbfefa
+[15:43:19.967:INFO :ControllerAdvice:43]       method : Current HttpServletRequest.method
+[15:43:19.967:INFO :ControllerAdvice:44]  request URL : GET
+[15:43:19.967:INFO :ControllerAdvice:45] query string : null
+[15:43:19.967:INFO :ControllerAdvice:51]         body : null
+[15:43:19.967:INFO :ControllerAdvice:52]      referer : http://localhost:3001/
+[15:43:19.968:INFO :ControllerAdvice:53] >>>>> controller start [UserController.getUser()]
+[15:43:19.968:INFO :ServiceAdvice:39] >>>>> service start [UserService.getUser()] 
+[15:43:19.968:DEBUG:SQL:144] 
+    select
+        comusermst0_.user_id as user_id1_0_,
+        comusermst0_.create_dt as create_d2_0_,
+        comusermst0_.create_user_id as create_u3_0_,
+        comusermst0_.nick_name as nick_nam4_0_,
+        comusermst0_.update_dt as update_d5_0_,
+        comusermst0_.update_user_id as update_u6_0_,
+        comusermst0_.user_name as user_nam7_0_ 
+    from
+        ringfit.com_user_mst comusermst0_
+[15:43:19.975:INFO :ServiceAdvice:48] <<<<<   service end [UserService.getUser()] [7 ms]
+[15:43:19.975:INFO :ControllerAdvice:63] <<<<<   controller end [UserController.getUser()] [7 ms] 
