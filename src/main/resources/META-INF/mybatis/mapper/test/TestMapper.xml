@@ -9,4 +9,13 @@
           from ringfit.test_mst
          limit 1
     </select>
+
+    <select id="selectTestWithId" resultType="GetTestOut">
+        select /* selectTestWithId @ test @ 테스트 단건 조회 */
+               id
+             , value
+          from ringfit.test_mst
+         where id = #{id}
+         limit 1
+    </select>
 </mapper>

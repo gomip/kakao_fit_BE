@@ -12,5 +12,5 @@ import org.springframework.stereotype.Repository
 @Repository
 interface TestMapper{
     fun selectTestOne(): GetTestOut
-    fun insertTestOne(input: PostTestIn): GetTestOut
+    fun selectTestWithId(id: String) : GetTestOut
 }

@@ -44,13 +44,16 @@ class ControllerAdvice {
             log.info(" request URL : ${request.method}")
             log.info("query string : ${request.queryString}")
 
-            var body = IOUtils.toString(request.inputStream, Charset.forName("UTF-8"))
-            body = body.replace("\n", "")
-            body = if (body.isNullOrEmpty()) null
-                else body
-            log.info("        body : $body")
-            log.info("     referer : ${request.getHeader("referer")}")
-            log.info(">>>>> controller start [$controllerName()]")
+            if (request.method in arrayOf("POST", "PATCH", "DELETE")) {
+                log.info("request : ${request.inputStream}")
+                var body = IOUtils.toString(request.inputStream, Charset.forName("UTF-8"))
+//                body = body.replace("\n", "")
+//                body = if (body.isNullOrEmpty()) null
+//                    else body
+//                log.info("        body : $body")
+                log.info("     referer : ${request.getHeader("referer")}")
+                log.info(">>>>> controller start [$controllerName()]")
+            }
             elapsed = measureTimeMillis {
                 returnVal = joinPoint.proceed()
             }

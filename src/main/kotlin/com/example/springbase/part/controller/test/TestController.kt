@@ -28,7 +28,19 @@ class TestController : BaseController(){
 
     @PostMapping
     @ApiOperation("테스트 api - post")
-    fun testPostController(@RequestBody input: PostTestIn) : GetTestOut{
-        return service.testPost(input)
+    fun testPost(@RequestBody input: PostTestIn) : GetTestOut{
+        return service.testService()
+    }
+
+    @PatchMapping
+    @ApiOperation("테스트 api - patch")
+    fun testPatch(@RequestBody input: PostTestIn) : GetTestOut {
+        return service.testService()
+    }
+
+    @DeleteMapping("/{id}")
+    @ApiOperation("테스트 api - delete")
+    fun testDelete(@PathVariable id: String) : GetTestOut{
+        return service.testService()
     }
 }
